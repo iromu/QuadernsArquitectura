@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D09B53C4B1A1634B71D3971C /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = D09B53417A3B9FF736DEC701 /* Util.m */; };
+		D936F93F1895375900DA0688 /* 1080 in Resources */ = {isa = PBXBuildFile; fileRef = D936F93E1895375900DA0688 /* 1080 */; };
+		D936F9401895375900DA0688 /* 1080 in Resources */ = {isa = PBXBuildFile; fileRef = D936F93E1895375900DA0688 /* 1080 */; };
+		D94ED97118952563003CEA1F /* ImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94ED97018952563003CEA1F /* ImageViewerController.m */; };
+		D98F3DE318951A6500AAA19E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3DE218951A6500AAA19E /* Cocoa.framework */; };
+		D98F3DED18951A6500AAA19E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98F3DEB18951A6500AAA19E /* InfoPlist.strings */; };
+		D98F3DEF18951A6500AAA19E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F3DEE18951A6500AAA19E /* main.m */; };
+		D98F3DF318951A6500AAA19E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D98F3DF118951A6500AAA19E /* Credits.rtf */; };
+		D98F3DF618951A6500AAA19E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F3DF518951A6500AAA19E /* AppDelegate.m */; };
+		D98F3DF918951A6500AAA19E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98F3DF718951A6500AAA19E /* MainMenu.xib */; };
+		D98F3DFB18951A6500AAA19E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98F3DFA18951A6500AAA19E /* Images.xcassets */; };
+		D98F3E0218951A6500AAA19E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E0118951A6500AAA19E /* XCTest.framework */; };
+		D98F3E0318951A6500AAA19E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3DE218951A6500AAA19E /* Cocoa.framework */; };
+		D98F3E0B18951A6500AAA19E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E0918951A6500AAA19E /* InfoPlist.strings */; };
+		D98F3E0D18951A6500AAA19E /* QuadernsArquitecturaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F3E0C18951A6500AAA19E /* QuadernsArquitecturaTests.m */; };
+		D98F3E4118951CE100AAA19E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E4018951CE100AAA19E /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98F3E0418951A6500AAA19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98F3DD718951A6500AAA19E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98F3DDE18951A6500AAA19E;
+			remoteInfo = QuadernsArquitectura;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D09B53417A3B9FF736DEC701 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		D09B5703B1E4243C66B59192 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		D936F93E1895375900DA0688 /* 1080 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 1080; path = "../../../../../../../../Shared/MACBA/Cuaderns Arquitectura/1080"; sourceTree = "<group>"; };
+		D94ED96F18952563003CEA1F /* ImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewerController.h; sourceTree = "<group>"; };
+		D94ED97018952563003CEA1F /* ImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewerController.m; sourceTree = "<group>"; };
+		D98F3DDF18951A6500AAA19E /* QuadernsArquitectura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadernsArquitectura.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98F3DE218951A6500AAA19E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D98F3DE518951A6500AAA19E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D98F3DE618951A6500AAA19E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D98F3DE718951A6500AAA19E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D98F3DEA18951A6500AAA19E /* QuadernsArquitectura-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadernsArquitectura-Info.plist"; sourceTree = "<group>"; };
+		D98F3DEC18951A6500AAA19E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D98F3DEE18951A6500AAA19E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D98F3DF018951A6500AAA19E /* QuadernsArquitectura-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuadernsArquitectura-Prefix.pch"; sourceTree = "<group>"; };
+		D98F3DF218951A6500AAA19E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D98F3DF418951A6500AAA19E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D98F3DF518951A6500AAA19E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D98F3DF818951A6500AAA19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D98F3DFA18951A6500AAA19E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D98F3E0018951A6500AAA19E /* QuadernsArquitecturaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadernsArquitecturaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98F3E0118951A6500AAA19E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D98F3E0818951A6500AAA19E /* QuadernsArquitecturaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadernsArquitecturaTests-Info.plist"; sourceTree = "<group>"; };
+		D98F3E0A18951A6500AAA19E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D98F3E0C18951A6500AAA19E /* QuadernsArquitecturaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadernsArquitecturaTests.m; sourceTree = "<group>"; };
+		D98F3E4018951CE100AAA19E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98F3DDC18951A6500AAA19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E4118951CE100AAA19E /* QuartzCore.framework in Frameworks */,
+				D98F3DE318951A6500AAA19E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98F3DFD18951A6500AAA19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E0318951A6500AAA19E /* Cocoa.framework in Frameworks */,
+				D98F3E0218951A6500AAA19E /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D98F3DD618951A6500AAA19E = {
+			isa = PBXGroup;
+			children = (
+				D98F3DE818951A6500AAA19E /* QuadernsArquitectura */,
+				D98F3E0618951A6500AAA19E /* QuadernsArquitecturaTests */,
+				D98F3DE118951A6500AAA19E /* Frameworks */,
+				D98F3DE018951A6500AAA19E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D98F3DE018951A6500AAA19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3DDF18951A6500AAA19E /* QuadernsArquitectura.app */,
+				D98F3E0018951A6500AAA19E /* QuadernsArquitecturaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98F3DE118951A6500AAA19E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E4018951CE100AAA19E /* QuartzCore.framework */,
+				D98F3DE218951A6500AAA19E /* Cocoa.framework */,
+				D98F3E0118951A6500AAA19E /* XCTest.framework */,
+				D98F3DE418951A6500AAA19E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98F3DE418951A6500AAA19E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3DE518951A6500AAA19E /* AppKit.framework */,
+				D98F3DE618951A6500AAA19E /* CoreData.framework */,
+				D98F3DE718951A6500AAA19E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D98F3DE818951A6500AAA19E /* QuadernsArquitectura */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3DF418951A6500AAA19E /* AppDelegate.h */,
+				D98F3DF518951A6500AAA19E /* AppDelegate.m */,
+				D98F3DF718951A6500AAA19E /* MainMenu.xib */,
+				D98F3DFA18951A6500AAA19E /* Images.xcassets */,
+				D98F3DE918951A6500AAA19E /* Supporting Files */,
+				D94ED96F18952563003CEA1F /* ImageViewerController.h */,
+				D94ED97018952563003CEA1F /* ImageViewerController.m */,
+				D09B53417A3B9FF736DEC701 /* Util.m */,
+				D09B5703B1E4243C66B59192 /* Util.h */,
+			);
+			path = QuadernsArquitectura;
+			sourceTree = "<group>";
+		};
+		D98F3DE918951A6500AAA19E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D936F93E1895375900DA0688 /* 1080 */,
+				D98F3DEA18951A6500AAA19E /* QuadernsArquitectura-Info.plist */,
+				D98F3DEB18951A6500AAA19E /* InfoPlist.strings */,
+				D98F3DEE18951A6500AAA19E /* main.m */,
+				D98F3DF018951A6500AAA19E /* QuadernsArquitectura-Prefix.pch */,
+				D98F3DF118951A6500AAA19E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D98F3E0618951A6500AAA19E /* QuadernsArquitecturaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E0C18951A6500AAA19E /* QuadernsArquitecturaTests.m */,
+				D98F3E0718951A6500AAA19E /* Supporting Files */,
+			);
+			path = QuadernsArquitecturaTests;
+			sourceTree = "<group>";
+		};
+		D98F3E0718951A6500AAA19E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E0818951A6500AAA19E /* QuadernsArquitecturaTests-Info.plist */,
+				D98F3E0918951A6500AAA19E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98F3DDE18951A6500AAA19E /* QuadernsArquitectura */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98F3E1018951A6500AAA19E /* Build configuration list for PBXNativeTarget "QuadernsArquitectura" */;
+			buildPhases = (
+				D98F3DDB18951A6500AAA19E /* Sources */,
+				D98F3DDC18951A6500AAA19E /* Frameworks */,
+				D98F3DDD18951A6500AAA19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadernsArquitectura;
+			productName = QuadernsArquitectura;
+			productReference = D98F3DDF18951A6500AAA19E /* QuadernsArquitectura.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D98F3DFF18951A6500AAA19E /* QuadernsArquitecturaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98F3E1318951A6500AAA19E /* Build configuration list for PBXNativeTarget "QuadernsArquitecturaTests" */;
+			buildPhases = (
+				D98F3DFC18951A6500AAA19E /* Sources */,
+				D98F3DFD18951A6500AAA19E /* Frameworks */,
+				D98F3DFE18951A6500AAA19E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98F3E0518951A6500AAA19E /* PBXTargetDependency */,
+			);
+			name = QuadernsArquitecturaTests;
+			productName = QuadernsArquitecturaTests;
+			productReference = D98F3E0018951A6500AAA19E /* QuadernsArquitecturaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98F3DD718951A6500AAA19E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ivan Rodriguez Murillo";
+				TargetAttributes = {
+					D98F3DFF18951A6500AAA19E = {
+						TestTargetID = D98F3DDE18951A6500AAA19E;
+					};
+				};
+			};
+			buildConfigurationList = D98F3DDA18951A6500AAA19E /* Build configuration list for PBXProject "QuadernsArquitectura" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98F3DD618951A6500AAA19E;
+			productRefGroup = D98F3DE018951A6500AAA19E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98F3DDE18951A6500AAA19E /* QuadernsArquitectura */,
+				D98F3DFF18951A6500AAA19E /* QuadernsArquitecturaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98F3DDD18951A6500AAA19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3DED18951A6500AAA19E /* InfoPlist.strings in Resources */,
+				D98F3DFB18951A6500AAA19E /* Images.xcassets in Resources */,
+				D98F3DF318951A6500AAA19E /* Credits.rtf in Resources */,
+				D936F93F1895375900DA0688 /* 1080 in Resources */,
+				D98F3DF918951A6500AAA19E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98F3DFE18951A6500AAA19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E0B18951A6500AAA19E /* InfoPlist.strings in Resources */,
+				D936F9401895375900DA0688 /* 1080 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98F3DDB18951A6500AAA19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3DF618951A6500AAA19E /* AppDelegate.m in Sources */,
+				D98F3DEF18951A6500AAA19E /* main.m in Sources */,
+				D94ED97118952563003CEA1F /* ImageViewerController.m in Sources */,
+				D09B53C4B1A1634B71D3971C /* Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98F3DFC18951A6500AAA19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E0D18951A6500AAA19E /* QuadernsArquitecturaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98F3E0518951A6500AAA19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98F3DDE18951A6500AAA19E /* QuadernsArquitectura */;
+			targetProxy = D98F3E0418951A6500AAA19E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D98F3DEB18951A6500AAA19E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98F3DEC18951A6500AAA19E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D98F3DF118951A6500AAA19E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98F3DF218951A6500AAA19E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D98F3DF718951A6500AAA19E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98F3DF818951A6500AAA19E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D98F3E0918951A6500AAA19E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98F3E0A18951A6500AAA19E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98F3E0E18951A6500AAA19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D98F3E0F18951A6500AAA19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D98F3E1118951A6500AAA19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsArquitectura/QuadernsArquitectura-Prefix.pch";
+				INFOPLIST_FILE = "QuadernsArquitectura/QuadernsArquitectura-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D98F3E1218951A6500AAA19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsArquitectura/QuadernsArquitectura-Prefix.pch";
+				INFOPLIST_FILE = "QuadernsArquitectura/QuadernsArquitectura-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D98F3E1418951A6500AAA19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadernsArquitectura.app/Contents/MacOS/QuadernsArquitectura";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsArquitectura/QuadernsArquitectura-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QuadernsArquitecturaTests/QuadernsArquitecturaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D98F3E1518951A6500AAA19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadernsArquitectura.app/Contents/MacOS/QuadernsArquitectura";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsArquitectura/QuadernsArquitectura-Prefix.pch";
+				INFOPLIST_FILE = "QuadernsArquitecturaTests/QuadernsArquitecturaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98F3DDA18951A6500AAA19E /* Build configuration list for PBXProject "QuadernsArquitectura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F3E0E18951A6500AAA19E /* Debug */,
+				D98F3E0F18951A6500AAA19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98F3E1018951A6500AAA19E /* Build configuration list for PBXNativeTarget "QuadernsArquitectura" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F3E1118951A6500AAA19E /* Debug */,
+				D98F3E1218951A6500AAA19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98F3E1318951A6500AAA19E /* Build configuration list for PBXNativeTarget "QuadernsArquitecturaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F3E1418951A6500AAA19E /* Debug */,
+				D98F3E1518951A6500AAA19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98F3DD718951A6500AAA19E /* Project object */;
+}

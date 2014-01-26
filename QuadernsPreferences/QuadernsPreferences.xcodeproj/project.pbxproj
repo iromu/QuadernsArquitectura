@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D98F3E2518951C4800AAA19E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E2418951C4800AAA19E /* Cocoa.framework */; };
+		D98F3E2718951C4800AAA19E /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E2618951C4800AAA19E /* PreferencePanes.framework */; };
+		D98F3E3118951C4800AAA19E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E2F18951C4800AAA19E /* InfoPlist.strings */; };
+		D98F3E3518951C4800AAA19E /* QuadernsPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F3E3418951C4800AAA19E /* QuadernsPreferences.m */; };
+		D98F3E3718951C4800AAA19E /* QuadernsPreferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E3618951C4800AAA19E /* QuadernsPreferences.tiff */; };
+		D98F3E3A18951C4800AAA19E /* QuadernsPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E3818951C4800AAA19E /* QuadernsPreferences.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D98F3E2118951C4800AAA19E /* QuadernsPreferences.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadernsPreferences.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98F3E2418951C4800AAA19E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D98F3E2618951C4800AAA19E /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
+		D98F3E2918951C4800AAA19E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D98F3E2A18951C4800AAA19E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D98F3E2B18951C4800AAA19E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D98F3E2E18951C4800AAA19E /* QuadernsPreferences-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadernsPreferences-Info.plist"; sourceTree = "<group>"; };
+		D98F3E3018951C4800AAA19E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D98F3E3218951C4800AAA19E /* QuadernsPreferences-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuadernsPreferences-Prefix.pch"; sourceTree = "<group>"; };
+		D98F3E3318951C4800AAA19E /* QuadernsPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadernsPreferences.h; sourceTree = "<group>"; };
+		D98F3E3418951C4800AAA19E /* QuadernsPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadernsPreferences.m; sourceTree = "<group>"; };
+		D98F3E3618951C4800AAA19E /* QuadernsPreferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = QuadernsPreferences.tiff; sourceTree = "<group>"; };
+		D98F3E3918951C4800AAA19E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/QuadernsPreferences.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98F3E1C18951C4800AAA19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E2518951C4800AAA19E /* Cocoa.framework in Frameworks */,
+				D98F3E2718951C4800AAA19E /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D98F3E1618951C4800AAA19E = {
+			isa = PBXGroup;
+			children = (
+				D98F3E2C18951C4800AAA19E /* QuadernsPreferences */,
+				D98F3E2318951C4800AAA19E /* Frameworks */,
+				D98F3E2218951C4800AAA19E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D98F3E2218951C4800AAA19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E2118951C4800AAA19E /* QuadernsPreferences.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98F3E2318951C4800AAA19E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E2418951C4800AAA19E /* Cocoa.framework */,
+				D98F3E2618951C4800AAA19E /* PreferencePanes.framework */,
+				D98F3E2818951C4800AAA19E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98F3E2818951C4800AAA19E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E2918951C4800AAA19E /* AppKit.framework */,
+				D98F3E2A18951C4800AAA19E /* CoreData.framework */,
+				D98F3E2B18951C4800AAA19E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D98F3E2C18951C4800AAA19E /* QuadernsPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E3318951C4800AAA19E /* QuadernsPreferences.h */,
+				D98F3E3418951C4800AAA19E /* QuadernsPreferences.m */,
+				D98F3E3618951C4800AAA19E /* QuadernsPreferences.tiff */,
+				D98F3E3818951C4800AAA19E /* QuadernsPreferences.xib */,
+				D98F3E2D18951C4800AAA19E /* Supporting Files */,
+			);
+			path = QuadernsPreferences;
+			sourceTree = "<group>";
+		};
+		D98F3E2D18951C4800AAA19E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D98F3E2E18951C4800AAA19E /* QuadernsPreferences-Info.plist */,
+				D98F3E2F18951C4800AAA19E /* InfoPlist.strings */,
+				D98F3E3218951C4800AAA19E /* QuadernsPreferences-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D98F3E1D18951C4800AAA19E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D98F3E2018951C4800AAA19E /* QuadernsPreferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98F3E3D18951C4800AAA19E /* Build configuration list for PBXNativeTarget "QuadernsPreferences" */;
+			buildPhases = (
+				D98F3E1B18951C4800AAA19E /* Sources */,
+				D98F3E1C18951C4800AAA19E /* Frameworks */,
+				D98F3E1D18951C4800AAA19E /* Headers */,
+				D98F3E1E18951C4800AAA19E /* Resources */,
+				D98F3E1F18951C4800AAA19E /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadernsPreferences;
+			productName = QuadernsPreferences;
+			productReference = D98F3E2118951C4800AAA19E /* QuadernsPreferences.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98F3E1718951C4800AAA19E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ivan Rodriguez Murillo";
+			};
+			buildConfigurationList = D98F3E1A18951C4800AAA19E /* Build configuration list for PBXProject "QuadernsPreferences" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98F3E1618951C4800AAA19E;
+			productRefGroup = D98F3E2218951C4800AAA19E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98F3E2018951C4800AAA19E /* QuadernsPreferences */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98F3E1E18951C4800AAA19E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E3718951C4800AAA19E /* QuadernsPreferences.tiff in Resources */,
+				D98F3E3118951C4800AAA19E /* InfoPlist.strings in Resources */,
+				D98F3E3A18951C4800AAA19E /* QuadernsPreferences.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		D98F3E1F18951C4800AAA19E /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98F3E1B18951C4800AAA19E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98F3E3518951C4800AAA19E /* QuadernsPreferences.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D98F3E2F18951C4800AAA19E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98F3E3018951C4800AAA19E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D98F3E3818951C4800AAA19E /* QuadernsPreferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98F3E3918951C4800AAA19E /* Base */,
+			);
+			name = QuadernsPreferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98F3E3B18951C4800AAA19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D98F3E3C18951C4800AAA19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D98F3E3E18951C4800AAA19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsPreferences/QuadernsPreferences-Prefix.pch";
+				INFOPLIST_FILE = "QuadernsPreferences/QuadernsPreferences-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		D98F3E3F18951C4800AAA19E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsPreferences/QuadernsPreferences-Prefix.pch";
+				INFOPLIST_FILE = "QuadernsPreferences/QuadernsPreferences-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98F3E1A18951C4800AAA19E /* Build configuration list for PBXProject "QuadernsPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F3E3B18951C4800AAA19E /* Debug */,
+				D98F3E3C18951C4800AAA19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98F3E3D18951C4800AAA19E /* Build configuration list for PBXNativeTarget "QuadernsPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98F3E3E18951C4800AAA19E /* Debug */,
+				D98F3E3F18951C4800AAA19E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98F3E1718951C4800AAA19E /* Project object */;
+}
