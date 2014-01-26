@@ -4,10 +4,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="FahlstromPreferences">
+        <customObject id="-2" userLabel="File's Owner" customClass="QuadernsPreferences">
             <connections>
                 <outlet property="_window" destination="12" id="26"/>
                 <outlet property="enableFullScreenCheckbox" destination="99" id="101"/>
+                <outlet property="enableTwoPagesModeCheckbox" destination="8qu-3i-eGD" id="DRe-9s-FC4"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
