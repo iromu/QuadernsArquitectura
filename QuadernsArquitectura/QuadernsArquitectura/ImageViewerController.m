@@ -8,6 +8,7 @@
 
 #import "ImageViewerController.h"
 
+#define MAX(a,b) ( ((a) > (b)) ? (a) : (b) )
 
 @implementation ImageViewerController
 
@@ -15,23 +16,41 @@
 @synthesize nextButton;
 @synthesize prevButton;
 @synthesize images;
+@synthesize twoPagesModeChecked;
 
-int current = 1;
-int start = 1;
+int current = 0;
+int start = 0;
 int end = 10;
 
 - (IBAction)nextImage:(id)sender {
-    if (current == end) return;
     current++;
     [self switchImage];
 }
 
 - (void)switchImage {
-    NSString *imagePath = [NSString stringWithFormat:@"%@", [images objectAtIndex:current]];
-    NSLog(@"%@", imagePath);
 
-    NSImage *newImage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imagePath ofType:nil]];
-    [imageView setImage:newImage];
+    NSString *imagePath = [NSString stringWithFormat:@"%@", [images objectAtIndex:current]];
+
+    NSImage *newImage = [self loadImage:current];
+
+    if (![imagePath.lastPathComponent isEqualToString:@"cover.jpg"] && twoPagesModeChecked == true) {
+
+        NSImage *nextImage = [self loadImage:++current];
+
+        CGFloat w = newImage.size.width + nextImage.size.width;
+        NSSize canvasSize = NSMakeSize(w, MAX(newImage.size.height, nextImage.size.height));
+
+        NSImage *resultImage = [[NSImage alloc] initWithSize:canvasSize];
+        [resultImage lockFocus];
+
+        [newImage drawAtPoint:NSMakePoint(0, 0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+        [nextImage drawAtPoint:NSMakePoint(newImage.size.width, 0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+
+        [resultImage unlockFocus];
+        [imageView setImage:resultImage];
+    } else {
+        [imageView setImage:newImage];
+    }
 
     [self.nextButton setEnabled:true];
     [self.prevButton setEnabled:true];
@@ -40,9 +59,17 @@ int end = 10;
     if (current == end) [self.nextButton setEnabled:false];
 }
 
+- (NSImage *)loadImage:(int)index {
+    NSString *imagePath = [NSString stringWithFormat:@"%@", [images objectAtIndex:index]];
+    NSLog(@"%@", imagePath);
+    NSImage *newImage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imagePath ofType:nil]];
+    return newImage;
+}
+
 - (IBAction)prevImage:(id)sender {
-    if (current == start) return;
     current--;
+    if (twoPagesModeChecked)
+        current--;
     [self switchImage];
 }
 
@@ -57,6 +84,12 @@ int end = 10;
 - (void)setNextButton:(NSButton *)button {
     nextButton = button;
     [self.nextButton setEnabled:true];
+}
+
+
+- (void)load:(int)index {
+    current = index;
+    [self switchImage];
 }
 
 

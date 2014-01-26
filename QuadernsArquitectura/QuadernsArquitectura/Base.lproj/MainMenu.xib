@@ -132,10 +132,10 @@
                     <imageView identifier="Visualizer" id="572">
                         <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <imageCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="3289" id="573"/>
+                        <imageCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="cover" id="573"/>
                     </imageView>
                     <button identifier="NextButton" id="748">
-                        <rect key="frame" x="915.99999936670065" y="257" width="24" height="27"/>
+                        <rect key="frame" x="915.99999871992668" y="257" width="24" height="27"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" id="751" customClass="FSButtonCell">
                             <behavior key="behavior" lightByContents="YES"/>
@@ -178,8 +178,8 @@
         </viewController>
     </objects>
     <resources>
-        <image name="3289" width="188.39999389648438" height="259.20001220703125"/>
         <image name="NSLeftFacingTriangleTemplate" width="9" height="9"/>
         <image name="NSRightFacingTriangleTemplate" width="9" height="9"/>
+        <image name="cover" width="188.39999389648438" height="259.20001220703125"/>
     </resources>
 </document>

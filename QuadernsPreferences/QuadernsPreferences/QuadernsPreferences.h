@@ -10,6 +10,9 @@
 
 @interface QuadernsPreferences : NSPreferencePane
 
+@property(assign) IBOutlet NSButton *enableFullScreenCheckbox;
+@property(assign) IBOutlet NSButton *enableTwoPagesModeCheckbox;
+
 - (void)mainViewDidLoad;
 
 @end

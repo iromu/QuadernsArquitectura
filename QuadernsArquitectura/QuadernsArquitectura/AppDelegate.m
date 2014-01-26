@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Util.h"
 
+
 @implementation AppDelegate
 
 @synthesize window;
@@ -34,7 +35,11 @@
     if ([[preferences objectForKey:@"isFSChecked"] boolValue])
         [self.window toggleFullScreen:self];
 
+    imageViewerController.twoPagesModeChecked = [[preferences objectForKey:@"isTwoPagesModeChecked"] boolValue];
+
     imageViewerController.images = [Util loadFilesFrom:@"1080" withExtension:@"jpg"];
+
+    [imageViewerController load:FIRST];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
