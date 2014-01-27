@@ -135,7 +135,7 @@
                         <imageCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="cover" id="573"/>
                     </imageView>
                     <button identifier="NextButton" id="748">
-                        <rect key="frame" x="915.99999871992668" y="257" width="24" height="27"/>
+                        <rect key="frame" x="916" y="257" width="24" height="27"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" id="751" customClass="FSButtonCell">
                             <behavior key="behavior" lightByContents="YES"/>

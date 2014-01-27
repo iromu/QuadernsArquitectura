@@ -12,6 +12,7 @@
 
 @property(assign) IBOutlet NSButton *enableFullScreenCheckbox;
 @property(assign) IBOutlet NSButton *enableTwoPagesModeCheckbox;
+@property(assign) IBOutlet NSColorWell *colorWell;
 
 - (void)mainViewDidLoad;
 

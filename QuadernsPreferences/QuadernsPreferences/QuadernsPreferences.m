@@ -7,29 +7,52 @@
 //
 
 #import "QuadernsPreferences.h"
+#import "QuadernsShared.h"
 
 @implementation QuadernsPreferences
 
 @synthesize enableFullScreenCheckbox;
 @synthesize enableTwoPagesModeCheckbox;
+@synthesize colorWell;
+
 
 - (void)mainViewDidLoad {
-    NSDictionary *preferences = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"iromu.QuadernsArquitectura"];
+    NSString *persistenDomainName = [[QuadernsShared getDefaults] objectForKey:@"domain"];
+    NSDictionary *preferences = [[NSUserDefaults standardUserDefaults] persistentDomainForName:persistenDomainName];
 
     self.enableFullScreenCheckbox.state = [[preferences objectForKey:@"isFSChecked"] boolValue];
     self.enableTwoPagesModeCheckbox.state = [[preferences objectForKey:@"isTwoPagesModeChecked"] boolValue];
 
+    NSColor *backGroundColor;
+    NSData *data = [preferences objectForKey:@"backGroundColor"];
+    if (!data == nil) {
+        backGroundColor = [NSUnarchiver unarchiveObjectWithData:data];
+        if (backGroundColor == nil || ![backGroundColor isKindOfClass:[NSColor class]]) {
+            backGroundColor = [[QuadernsShared getDefaults] objectForKey:@"backGroundColor"];
+        }
+    } else {
+        backGroundColor = [[QuadernsShared getDefaults] objectForKey:@"backGroundColor"];
+    }
+
+
+    self.colorWell.color = backGroundColor;
+
 }
 
 - (void)didUnselect {
-    NSDictionary *preferences = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"iromu.QuadernsArquitectura"];
+    NSString *persistenDomainName = [[QuadernsShared getDefaults] objectForKey:@"domain"];
+    NSDictionary *preferences = [[NSUserDefaults standardUserDefaults] persistentDomainForName:persistenDomainName];
 
     NSMutableDictionary *mutablePreferences = [NSMutableDictionary dictionaryWithDictionary:preferences];
 
     [mutablePreferences setObject:[NSNumber numberWithBool:self.enableFullScreenCheckbox.state] forKey:@"isFSChecked"];
     [mutablePreferences setObject:[NSNumber numberWithBool:self.enableTwoPagesModeCheckbox.state] forKey:@"isTwoPagesModeChecked"];
 
-    [[NSUserDefaults standardUserDefaults] setPersistentDomain:mutablePreferences forName:@"iromu.QuadernsArquitectura"];
+    NSData *data = [NSArchiver archivedDataWithRootObject:self.colorWell.color];
+    [mutablePreferences setObject:data forKey:@"backGroundColor"];
+
+    [[NSUserDefaults standardUserDefaults] setPersistentDomain:mutablePreferences forName:persistenDomainName];
 }
+
 
 @end

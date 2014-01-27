@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D95B1258189702BE00930DEC /* QuadernsShared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D95B1257189702BE00930DEC /* QuadernsShared.dylib */; };
+		D95B125B18970B6D00930DEC /* QuadernsShared.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D95B1257189702BE00930DEC /* QuadernsShared.dylib */; };
 		D98F3E2518951C4800AAA19E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E2418951C4800AAA19E /* Cocoa.framework */; };
 		D98F3E2718951C4800AAA19E /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E2618951C4800AAA19E /* PreferencePanes.framework */; };
 		D98F3E3118951C4800AAA19E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E2F18951C4800AAA19E /* InfoPlist.strings */; };
@@ -15,7 +17,21 @@
 		D98F3E3A18951C4800AAA19E /* QuadernsPreferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E3818951C4800AAA19E /* QuadernsPreferences.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D95B125A18970B5F00930DEC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D95B125B18970B6D00930DEC /* QuadernsShared.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D95B1257189702BE00930DEC /* QuadernsShared.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = QuadernsShared.dylib; path = "../../../../../../../../../../Users/wantez/Library/Developer/Xcode/DerivedData/Quaderns-ealekzglwcknaxgzyfugdlvyqsiu/Build/Products/Release/QuadernsShared.dylib"; sourceTree = "<group>"; };
 		D98F3E2118951C4800AAA19E /* QuadernsPreferences.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadernsPreferences.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98F3E2418951C4800AAA19E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D98F3E2618951C4800AAA19E /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95B1258189702BE00930DEC /* QuadernsShared.dylib in Frameworks */,
 				D98F3E2518951C4800AAA19E /* Cocoa.framework in Frameworks */,
 				D98F3E2718951C4800AAA19E /* PreferencePanes.framework in Frameworks */,
 			);
@@ -64,6 +81,7 @@
 		D98F3E2318951C4800AAA19E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D95B1257189702BE00930DEC /* QuadernsShared.dylib */,
 				D98F3E2418951C4800AAA19E /* Cocoa.framework */,
 				D98F3E2618951C4800AAA19E /* PreferencePanes.framework */,
 				D98F3E2818951C4800AAA19E /* Other Frameworks */,
@@ -125,6 +143,7 @@
 				D98F3E1D18951C4800AAA19E /* Headers */,
 				D98F3E1E18951C4800AAA19E /* Resources */,
 				D98F3E1F18951C4800AAA19E /* Rez */,
+				D95B125A18970B5F00930DEC /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -292,7 +311,12 @@
 				GCC_PREFIX_HEADER = "QuadernsPreferences/QuadernsPreferences-Prefix.pch";
 				INFOPLIST_FILE = "QuadernsPreferences/QuadernsPreferences-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Quaderns-ealekzglwcknaxgzyfugdlvyqsiu/Build/Products/Release",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../QuadernsShared\"/**";
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Debug;
@@ -305,7 +329,12 @@
 				GCC_PREFIX_HEADER = "QuadernsPreferences/QuadernsPreferences-Prefix.pch";
 				INFOPLIST_FILE = "QuadernsPreferences/QuadernsPreferences-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Quaderns-ealekzglwcknaxgzyfugdlvyqsiu/Build/Products/Release",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/../QuadernsShared\"/**";
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;
@@ -329,6 +358,7 @@
 				D98F3E3F18951C4800AAA19E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

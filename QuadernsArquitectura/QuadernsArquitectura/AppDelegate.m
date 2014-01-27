@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Util.h"
-
+#import "QuadernsShared.h"
 
 @implementation AppDelegate
 
@@ -17,8 +17,6 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [self.window setAcceptsMouseMovedEvents:YES];
     [self.window setCollectionBehavior:NSWindowCollectionBehaviorFullScreenPrimary];
-
-    [self.window setBackgroundColor:[NSColor colorWithSRGBRed:(147 / 255.0f) green:(138 / 255.0f) blue:(129 / 255.0f) alpha:1.0]];
 
 
     [[NSNotificationCenter defaultCenter] addObserver:imageViewerController
@@ -30,7 +28,22 @@
                                                  name:NSWindowDidExitFullScreenNotification
                                                object:nil];
 
-    NSDictionary *preferences = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"iromu.QuadernsArquitectura"];
+    NSString *persistenDomainName = [[QuadernsShared getDefaults] objectForKey:@"domain"];
+    NSDictionary *preferences = [[NSUserDefaults standardUserDefaults] persistentDomainForName:persistenDomainName];
+
+    NSColor *backGroundColor;
+    NSData *data = [preferences objectForKey:@"backGroundColor"];
+    if (!data == nil) {
+        backGroundColor = [NSUnarchiver unarchiveObjectWithData:data];
+        if (backGroundColor == nil || ![backGroundColor isKindOfClass:[NSColor class]]) {
+            backGroundColor = [[QuadernsShared getDefaults] objectForKey:@"backGroundColor"];
+        }
+    } else {
+        backGroundColor = [[QuadernsShared getDefaults] objectForKey:@"backGroundColor"];
+    }
+
+
+    [self.window setBackgroundColor:backGroundColor];
 
     if ([[preferences objectForKey:@"isFSChecked"] boolValue])
         [self.window toggleFullScreen:self];

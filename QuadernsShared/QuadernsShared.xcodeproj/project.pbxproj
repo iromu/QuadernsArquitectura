@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D95B12291896FCCB00930DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95B12281896FCCB00930DEC /* Cocoa.framework */; };
+		D95B12331896FCCB00930DEC /* QuadernsShared.m in Sources */ = {isa = PBXBuildFile; fileRef = D95B12321896FCCB00930DEC /* QuadernsShared.m */; };
+		D95B123A1896FCCB00930DEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95B12391896FCCB00930DEC /* XCTest.framework */; };
+		D95B123B1896FCCB00930DEC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95B12281896FCCB00930DEC /* Cocoa.framework */; };
+		D95B123E1896FCCB00930DEC /* QuadernsShared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D95B12251896FCCB00930DEC /* QuadernsShared.dylib */; };
+		D95B12441896FCCB00930DEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D95B12421896FCCB00930DEC /* InfoPlist.strings */; };
+		D95B12461896FCCB00930DEC /* QuadernsSharedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D95B12451896FCCB00930DEC /* QuadernsSharedTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D95B123C1896FCCB00930DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D95B121D1896FCCA00930DEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D95B12241896FCCB00930DEC;
+			remoteInfo = QuadernsShared;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D95B12251896FCCB00930DEC /* QuadernsShared.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = QuadernsShared.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95B12281896FCCB00930DEC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D95B122B1896FCCB00930DEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D95B122C1896FCCB00930DEC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D95B122D1896FCCB00930DEC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D95B12301896FCCB00930DEC /* QuadernsShared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuadernsShared-Prefix.pch"; sourceTree = "<group>"; };
+		D95B12311896FCCB00930DEC /* QuadernsShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadernsShared.h; sourceTree = "<group>"; };
+		D95B12321896FCCB00930DEC /* QuadernsShared.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadernsShared.m; sourceTree = "<group>"; };
+		D95B12381896FCCB00930DEC /* QuadernsSharedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuadernsSharedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95B12391896FCCB00930DEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D95B12411896FCCB00930DEC /* QuadernsSharedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuadernsSharedTests-Info.plist"; sourceTree = "<group>"; };
+		D95B12431896FCCB00930DEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D95B12451896FCCB00930DEC /* QuadernsSharedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadernsSharedTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D95B12221896FCCB00930DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95B12291896FCCB00930DEC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95B12351896FCCB00930DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95B123B1896FCCB00930DEC /* Cocoa.framework in Frameworks */,
+				D95B123A1896FCCB00930DEC /* XCTest.framework in Frameworks */,
+				D95B123E1896FCCB00930DEC /* QuadernsShared.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D95B121C1896FCCA00930DEC = {
+			isa = PBXGroup;
+			children = (
+				D95B122E1896FCCB00930DEC /* QuadernsShared */,
+				D95B123F1896FCCB00930DEC /* QuadernsSharedTests */,
+				D95B12271896FCCB00930DEC /* Frameworks */,
+				D95B12261896FCCB00930DEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D95B12261896FCCB00930DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D95B12251896FCCB00930DEC /* QuadernsShared.dylib */,
+				D95B12381896FCCB00930DEC /* QuadernsSharedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D95B12271896FCCB00930DEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95B12281896FCCB00930DEC /* Cocoa.framework */,
+				D95B12391896FCCB00930DEC /* XCTest.framework */,
+				D95B122A1896FCCB00930DEC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95B122A1896FCCB00930DEC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95B122B1896FCCB00930DEC /* Foundation.framework */,
+				D95B122C1896FCCB00930DEC /* CoreData.framework */,
+				D95B122D1896FCCB00930DEC /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D95B122E1896FCCB00930DEC /* QuadernsShared */ = {
+			isa = PBXGroup;
+			children = (
+				D95B12311896FCCB00930DEC /* QuadernsShared.h */,
+				D95B12321896FCCB00930DEC /* QuadernsShared.m */,
+				D95B122F1896FCCB00930DEC /* Supporting Files */,
+			);
+			path = QuadernsShared;
+			sourceTree = "<group>";
+		};
+		D95B122F1896FCCB00930DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95B12301896FCCB00930DEC /* QuadernsShared-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D95B123F1896FCCB00930DEC /* QuadernsSharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				D95B12451896FCCB00930DEC /* QuadernsSharedTests.m */,
+				D95B12401896FCCB00930DEC /* Supporting Files */,
+			);
+			path = QuadernsSharedTests;
+			sourceTree = "<group>";
+		};
+		D95B12401896FCCB00930DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D95B12411896FCCB00930DEC /* QuadernsSharedTests-Info.plist */,
+				D95B12421896FCCB00930DEC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D95B12231896FCCB00930DEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D95B12241896FCCB00930DEC /* QuadernsShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95B12491896FCCB00930DEC /* Build configuration list for PBXNativeTarget "QuadernsShared" */;
+			buildPhases = (
+				D95B12211896FCCB00930DEC /* Sources */,
+				D95B12221896FCCB00930DEC /* Frameworks */,
+				D95B12231896FCCB00930DEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuadernsShared;
+			productName = QuadernsShared;
+			productReference = D95B12251896FCCB00930DEC /* QuadernsShared.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D95B12371896FCCB00930DEC /* QuadernsSharedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95B124C1896FCCB00930DEC /* Build configuration list for PBXNativeTarget "QuadernsSharedTests" */;
+			buildPhases = (
+				D95B12341896FCCB00930DEC /* Sources */,
+				D95B12351896FCCB00930DEC /* Frameworks */,
+				D95B12361896FCCB00930DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D95B123D1896FCCB00930DEC /* PBXTargetDependency */,
+			);
+			name = QuadernsSharedTests;
+			productName = QuadernsSharedTests;
+			productReference = D95B12381896FCCB00930DEC /* QuadernsSharedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D95B121D1896FCCA00930DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Ivan Rodriguez Murillo";
+				TargetAttributes = {
+					D95B12371896FCCB00930DEC = {
+						TestTargetID = D95B12241896FCCB00930DEC;
+					};
+				};
+			};
+			buildConfigurationList = D95B12201896FCCA00930DEC /* Build configuration list for PBXProject "QuadernsShared" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D95B121C1896FCCA00930DEC;
+			productRefGroup = D95B12261896FCCB00930DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D95B12241896FCCB00930DEC /* QuadernsShared */,
+				D95B12371896FCCB00930DEC /* QuadernsSharedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D95B12361896FCCB00930DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95B12441896FCCB00930DEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D95B12211896FCCB00930DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95B12331896FCCB00930DEC /* QuadernsShared.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95B12341896FCCB00930DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95B12461896FCCB00930DEC /* QuadernsSharedTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D95B123D1896FCCB00930DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D95B12241896FCCB00930DEC /* QuadernsShared */;
+			targetProxy = D95B123C1896FCCB00930DEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D95B12421896FCCB00930DEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95B12431896FCCB00930DEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D95B12471896FCCB00930DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D95B12481896FCCB00930DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D95B124A1896FCCB00930DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsShared/QuadernsShared-Prefix.pch";
+				LD_DYLIB_INSTALL_NAME = "@loader_path/../Frameworks/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D95B124B1896FCCB00930DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsShared/QuadernsShared-Prefix.pch";
+				LD_DYLIB_INSTALL_NAME = "@loader_path/../Frameworks/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D95B124D1896FCCB00930DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadernsShared.dylib";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsShared/QuadernsShared-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QuadernsSharedTests/QuadernsSharedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D95B124E1896FCCB00930DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuadernsShared.dylib";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuadernsShared/QuadernsShared-Prefix.pch";
+				INFOPLIST_FILE = "QuadernsSharedTests/QuadernsSharedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D95B12201896FCCA00930DEC /* Build configuration list for PBXProject "QuadernsShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95B12471896FCCB00930DEC /* Debug */,
+				D95B12481896FCCB00930DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95B12491896FCCB00930DEC /* Build configuration list for PBXNativeTarget "QuadernsShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95B124A1896FCCB00930DEC /* Debug */,
+				D95B124B1896FCCB00930DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95B124C1896FCCB00930DEC /* Build configuration list for PBXNativeTarget "QuadernsSharedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95B124D1896FCCB00930DEC /* Debug */,
+				D95B124E1896FCCB00930DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D95B121D1896FCCA00930DEC /* Project object */;
+}
