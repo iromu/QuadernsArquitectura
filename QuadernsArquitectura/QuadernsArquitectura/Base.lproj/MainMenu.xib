@@ -125,7 +125,7 @@
             <rect key="contentRect" x="509" y="229" width="960" height="540"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="960" height="540"/>
-            <view key="contentView" id="372">
+            <view key="contentView" wantsLayer="YES" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="960" height="540"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -134,9 +134,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <imageCell key="cell" continuous="YES" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="cover" id="573"/>
                     </imageView>
-                    <button identifier="NextButton" id="748">
-                        <rect key="frame" x="916" y="257" width="24" height="27"/>
+                    <button identifier="NextButton" alphaValue="0.79999999999999993" id="748">
+                        <rect key="frame" x="915.99999936670065" y="257" width="24" height="27"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <animations/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSRightFacingTriangleTemplate" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" id="751" customClass="FSButtonCell">
                             <behavior key="behavior" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -145,7 +146,7 @@
                             <action selector="nextImage:" target="550" id="758"/>
                         </connections>
                     </button>
-                    <button identifier="LeftButton" id="694">
+                    <button identifier="LeftButton" alphaValue="0.79999999999999993" id="694">
                         <rect key="frame" x="20" y="257" width="24" height="27"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSLeftFacingTriangleTemplate" imagePosition="only" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" id="695" customClass="FSButtonCell">
