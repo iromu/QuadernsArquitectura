@@ -38,15 +38,18 @@ int end = 10;
     if (![imagePath.lastPathComponent isEqualToString:@"cover.jpg"] && twoPagesModeChecked == true) {
 
         NSImage *nextImage = [self loadImage:++current];
+        NSBitmapImageRep *nextImageRep = [NSBitmapImageRep imageRepWithData:[nextImage TIFFRepresentation]];
 
-        CGFloat w = newImage.size.width + nextImage.size.width;
-        NSSize canvasSize = NSMakeSize(w, MAX(newImage.size.height, nextImage.size.height));
+        NSBitmapImageRep *newImageRep = [NSBitmapImageRep imageRepWithData:[newImage TIFFRepresentation]];
+        CGFloat w = newImageRep.pixelsWide + nextImageRep.pixelsWide;
+        NSSize canvasSize = NSMakeSize(w, MAX(newImageRep.pixelsHigh, nextImageRep.pixelsHigh));
 
         NSImage *resultImage = [[NSImage alloc] initWithSize:canvasSize];
+
         [resultImage lockFocus];
 
-        [newImage drawAtPoint:NSMakePoint(0, 0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
-        [nextImage drawAtPoint:NSMakePoint(newImage.size.width, 0) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+        [newImage drawInRect:NSMakeRect(0, 0, newImageRep.pixelsWide, canvasSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+        [nextImage drawInRect:NSMakeRect(newImageRep.pixelsWide, 0, nextImageRep.pixelsWide, canvasSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
         [resultImage unlockFocus];
         [imageView setImage:resultImage];
@@ -76,11 +79,12 @@ int end = 10;
 }
 
 - (void)didExitFull:(NSNotification *)notif {
+    NSLog(@"ImageViewerController didExitFull");
 
 }
 
 - (void)willEnterFull:(NSNotification *)notif {
-
+    NSLog(@"ImageViewerController willEnterFull");
 }
 
 - (void)setNextButton:(NSButton *)button {
