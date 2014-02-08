@@ -8,4 +8,6 @@
 
 @interface Util : NSObject
 + (NSArray *)loadFilesFrom:(NSString *)path withExtension:(NSString *)extension;
+
++ (NSArray *)twoPageParser:(NSArray *)images;
 @end

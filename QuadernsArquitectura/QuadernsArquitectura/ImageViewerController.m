@@ -30,38 +30,41 @@ int end = 10;
 }
 
 - (void)switchImage {
+    end = images.count - 1;
+    if (twoPagesModeChecked == true ) {
 
-    NSString *imagePath = [NSString stringWithFormat:@"%@", [images objectAtIndex:current]];
+        NSImage *newImage = [self loadImage:current at:0];
+        NSImage *nextImage = [self loadImage:current at:1];
+        if (nextImage == nil) {
+            [imageView setImage:newImage];
+        }
+        else {
+            NSBitmapImageRep *nextImageRep = [NSBitmapImageRep imageRepWithData:[nextImage TIFFRepresentation]];
 
-    NSImage *newImage = [self loadImage:current];
+            NSBitmapImageRep *newImageRep = [NSBitmapImageRep imageRepWithData:[newImage TIFFRepresentation]];
+            CGFloat w = newImageRep.pixelsWide + nextImageRep.pixelsWide;
+            NSSize canvasSize = NSMakeSize(w, MAX(newImageRep.pixelsHigh, nextImageRep.pixelsHigh));
 
-    if (![imagePath.lastPathComponent isEqualToString:@"cover.jpg"] && twoPagesModeChecked == true) {
+            NSImage *resultImage = [[NSImage alloc] initWithSize:canvasSize];
 
-        NSImage *nextImage = [self loadImage:++current];
-        NSBitmapImageRep *nextImageRep = [NSBitmapImageRep imageRepWithData:[nextImage TIFFRepresentation]];
+            [resultImage lockFocus];
 
-        NSBitmapImageRep *newImageRep = [NSBitmapImageRep imageRepWithData:[newImage TIFFRepresentation]];
-        CGFloat w = newImageRep.pixelsWide + nextImageRep.pixelsWide;
-        NSSize canvasSize = NSMakeSize(w, MAX(newImageRep.pixelsHigh, nextImageRep.pixelsHigh));
+            [newImage drawInRect:NSMakeRect(0, 0, newImageRep.pixelsWide, canvasSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+            [nextImage drawInRect:NSMakeRect(newImageRep.pixelsWide, 0, nextImageRep.pixelsWide, canvasSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
 
-        NSImage *resultImage = [[NSImage alloc] initWithSize:canvasSize];
-
-        [resultImage lockFocus];
-
-        [newImage drawInRect:NSMakeRect(0, 0, newImageRep.pixelsWide, canvasSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
-        [nextImage drawInRect:NSMakeRect(newImageRep.pixelsWide, 0, nextImageRep.pixelsWide, canvasSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
-
-        [resultImage unlockFocus];
-        [imageView setImage:resultImage];
+            [resultImage unlockFocus];
+            [imageView setImage:resultImage];
+        }
     } else {
+        NSImage *newImage = [self loadImage:current];
         [imageView setImage:newImage];
     }
 
     [self.nextButton setEnabled:true];
     [self.prevButton setEnabled:true];
 
-    if (current == start) [self.prevButton setEnabled:false];
-    if (current == end) [self.nextButton setEnabled:false];
+    if (current <= start) [self.prevButton setEnabled:false];
+    if (current >= end) [self.nextButton setEnabled:false];
 }
 
 - (NSImage *)loadImage:(int)index {
@@ -71,10 +74,19 @@ int end = 10;
     return newImage;
 }
 
+- (NSImage *)loadImage:(int)index at:(int)at {
+    if (index >= images.count) return nil;
+    NSArray *container = [images objectAtIndex:index];
+    if (at >= container.count) return nil;
+
+    NSString *imagePath = [NSString stringWithFormat:@"%@", [container objectAtIndex:at]];
+    NSLog(@"%@", imagePath);
+    NSImage *newImage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imagePath ofType:nil]];
+    return newImage;
+}
+
 - (IBAction)prevImage:(id)sender {
     current--;
-    if (twoPagesModeChecked)
-        current--;
     [self switchImage];
 }
 

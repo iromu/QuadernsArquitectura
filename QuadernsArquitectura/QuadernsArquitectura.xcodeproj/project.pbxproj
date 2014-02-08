@@ -11,8 +11,6 @@
 		D936F93F1895375900DA0688 /* 1080 in Resources */ = {isa = PBXBuildFile; fileRef = D936F93E1895375900DA0688 /* 1080 */; };
 		D936F9401895375900DA0688 /* 1080 in Resources */ = {isa = PBXBuildFile; fileRef = D936F93E1895375900DA0688 /* 1080 */; };
 		D94ED97118952563003CEA1F /* ImageViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94ED97018952563003CEA1F /* ImageViewerController.m */; };
-		D95B126018970BAC00930DEC /* QuadernsShared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D95B125F18970BAC00930DEC /* QuadernsShared.dylib */; };
-		D95B126118970BB500930DEC /* QuadernsShared.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D95B125F18970BAC00930DEC /* QuadernsShared.dylib */; };
 		D98F3DE318951A6500AAA19E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3DE218951A6500AAA19E /* Cocoa.framework */; };
 		D98F3DED18951A6500AAA19E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98F3DEB18951A6500AAA19E /* InfoPlist.strings */; };
 		D98F3DEF18951A6500AAA19E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F3DEE18951A6500AAA19E /* main.m */; };
@@ -25,6 +23,8 @@
 		D98F3E0B18951A6500AAA19E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D98F3E0918951A6500AAA19E /* InfoPlist.strings */; };
 		D98F3E0D18951A6500AAA19E /* QuadernsArquitecturaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F3E0C18951A6500AAA19E /* QuadernsArquitecturaTests.m */; };
 		D98F3E4118951CE100AAA19E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98F3E4018951CE100AAA19E /* QuartzCore.framework */; };
+		D996693C18A0466D00EFE802 /* QuadernsShared.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D996693B18A0466D00EFE802 /* QuadernsShared.dylib */; };
+		D996693D18A0467A00EFE802 /* QuadernsShared.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D996693B18A0466D00EFE802 /* QuadernsShared.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D95B126118970BB500930DEC /* QuadernsShared.dylib in CopyFiles */,
+				D996693D18A0467A00EFE802 /* QuadernsShared.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,6 @@
 		D936F93E1895375900DA0688 /* 1080 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = 1080; path = "../../../../../../../../Shared/MACBA/Cuaderns Arquitectura/1080"; sourceTree = "<group>"; };
 		D94ED96F18952563003CEA1F /* ImageViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewerController.h; sourceTree = "<group>"; };
 		D94ED97018952563003CEA1F /* ImageViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewerController.m; sourceTree = "<group>"; };
-		D95B125F18970BAC00930DEC /* QuadernsShared.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = QuadernsShared.dylib; path = "../../../../../../../../../../Users/wantez/Library/Developer/Xcode/DerivedData/Quaderns-ealekzglwcknaxgzyfugdlvyqsiu/Build/Products/Release/QuadernsShared.dylib"; sourceTree = "<group>"; };
 		D98F3DDF18951A6500AAA19E /* QuadernsArquitectura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuadernsArquitectura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98F3DE218951A6500AAA19E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D98F3DE518951A6500AAA19E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +76,7 @@
 		D98F3E0A18951A6500AAA19E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D98F3E0C18951A6500AAA19E /* QuadernsArquitecturaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuadernsArquitecturaTests.m; sourceTree = "<group>"; };
 		D98F3E4018951CE100AAA19E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D996693B18A0466D00EFE802 /* QuadernsShared.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = QuadernsShared.dylib; path = "../../../../../../../../../../Users/wantez/Library/Developer/Xcode/DerivedData/Quaderns-ealekzglwcknaxgzyfugdlvyqsiu/Build/Products/Debug/QuadernsShared.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95B126018970BAC00930DEC /* QuadernsShared.dylib in Frameworks */,
+				D996693C18A0466D00EFE802 /* QuadernsShared.dylib in Frameworks */,
 				D98F3E4118951CE100AAA19E /* QuartzCore.framework in Frameworks */,
 				D98F3DE318951A6500AAA19E /* Cocoa.framework in Frameworks */,
 			);
@@ -124,7 +124,7 @@
 		D98F3DE118951A6500AAA19E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D95B125F18970BAC00930DEC /* QuadernsShared.dylib */,
+				D996693B18A0466D00EFE802 /* QuadernsShared.dylib */,
 				D98F3E4018951CE100AAA19E /* QuartzCore.framework */,
 				D98F3DE218951A6500AAA19E /* Cocoa.framework */,
 				D98F3E0118951A6500AAA19E /* XCTest.framework */,

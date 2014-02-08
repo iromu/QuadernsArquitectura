@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#define FIRST 0
+#define FIRST_PAGE 0
 
 @interface ImageViewerController : NSViewController
 

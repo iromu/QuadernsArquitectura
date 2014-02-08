@@ -18,16 +18,44 @@
     NSString *file;
     NSMutableArray *array = [NSMutableArray array];
     while ((file = [de nextObject])) {
-        NSString *fullPath = [NSString stringWithFormat:@"%@/%@", path, file];
-        if (extension != nil) {
-            if ([file.pathExtension isEqualToString:extension]) {
+        if ([file rangeOfString:@"EXCLUDE"].location == NSNotFound) {
+            NSString *fullPath = [NSString stringWithFormat:@"%@/%@", path, file];
+            if (extension != nil) {
+                if ([file.pathExtension isEqualToString:extension]) {
+                    [array addObject:fullPath];
+                }
+            } else {
                 [array addObject:fullPath];
             }
-        } else {
-            [array addObject:fullPath];
         }
     }
 
     return array;
 }
+
++ (NSArray *)twoPageParser:(NSArray *)images {
+    NSMutableArray *twoPagesImages = [NSMutableArray array];
+
+    for (int current = 0; current < images.count - 1; current++) {
+        NSString *file = [images objectAtIndex:current];
+
+        NSMutableArray *container = [NSMutableArray array];
+        [container addObject:file];
+
+        if (current < images.count - 1) {
+
+            NSString *next = [images objectAtIndex:current + 1];
+            BOOL notIsCover = ![file.lastPathComponent hasSuffix:@"cover.jpg"] && ![next.lastPathComponent hasSuffix:@"cover.jpg"];
+
+            if (notIsCover) {
+                [container addObject:next];
+                current++;
+            }
+        }
+        [twoPagesImages addObject:container];
+    }
+
+    return twoPagesImages;
+}
+
 @end

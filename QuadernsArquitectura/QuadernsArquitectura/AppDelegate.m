@@ -48,11 +48,14 @@
     if ([[preferences objectForKey:@"isFSChecked"] boolValue])
         [self.window toggleFullScreen:self];
 
-    imageViewerController.twoPagesModeChecked = [[preferences objectForKey:@"isTwoPagesModeChecked"] boolValue];
+    BOOL twoPagesModeChecked = [[preferences objectForKey:@"isTwoPagesModeChecked"] boolValue];
+    NSArray *images = [Util loadFilesFrom:@"1080" withExtension:@"jpg"];
 
-    imageViewerController.images = [Util loadFilesFrom:@"1080" withExtension:@"jpg"];
+    imageViewerController.twoPagesModeChecked = twoPagesModeChecked;
 
-    [imageViewerController load:FIRST];
+    imageViewerController.images = (twoPagesModeChecked) ? [Util twoPageParser:images] : images;
+
+    [imageViewerController load:FIRST_PAGE];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
